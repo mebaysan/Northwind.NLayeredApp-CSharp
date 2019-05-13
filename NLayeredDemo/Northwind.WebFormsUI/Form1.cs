@@ -1,5 +1,6 @@
 ﻿using Northwind.Bussiness.Abstract;
 using Northwind.Bussiness.Concrete;
+using Northwind.Bussiness.DependencyResolves.Ninject;
 using Northwind.DataAccess.Concrete.EntityFramework;
 using Northwind.Entities.Concrete;
 using System;
@@ -19,8 +20,8 @@ namespace Northwind.WebFormsUI
         public Form1()
         {
             InitializeComponent();
-            _productService = new ProductManager(new EfProductDal());
-            _categoryService = new CategoryManager(new EfCategoryDal());
+            _productService = InstanceFactory.GetInstance<IProductService>();
+            _categoryService = InstanceFactory.GetInstance<ICategoryService>();
         }
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

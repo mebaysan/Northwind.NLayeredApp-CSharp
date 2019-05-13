@@ -18,3 +18,5 @@ C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.
 C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\FluentValidation.dll
 C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\System.ComponentModel.Annotations.dll
 C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\FluentValidation.xml
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\Ninject.dll
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\Ninject.xml
