@@ -93,6 +93,7 @@ namespace Northwind.WebFormsUI
 
             });
             MessageBox.Show("Ürün kaydedildi!");
+            LoadProducts();
         }
     }
 }
