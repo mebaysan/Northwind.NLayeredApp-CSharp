@@ -1,13 +1,14 @@
-﻿using Northwind.Entities.Concrete;
+﻿using Northwind.DataAccess.Abstract;
+using Northwind.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Northwind.DataAccess.Concrete
+namespace Northwind.DataAccess.Concrete.EntityFramework
 {
-    public class ProductDal
+    public class EfProductDal:IProductDal // interface sayesinde yarın öbür gün başka bir veritabanı ile çalışmak istersek değişimi kolaylaştıracak
     {
         // ürün ile ilgili crud işlemlerinin olacağı bölümü hazırladık.
         public List<Product> GetAll()

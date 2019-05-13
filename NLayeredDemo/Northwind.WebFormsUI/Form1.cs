@@ -1,4 +1,5 @@
 ﻿using Northwind.Bussiness.Concrete;
+using Northwind.DataAccess.Concrete.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +26,7 @@ namespace Northwind.WebFormsUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ProductManager productManager = new ProductManager();
+            ProductManager productManager = new ProductManager(new EfProductDal());
             dgwProduct.DataSource = productManager.GetAll();
         }
     }
