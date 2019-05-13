@@ -40,17 +40,26 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.tbxProductName2 = new System.Windows.Forms.TextBox();
             this.cbxCategoryId = new System.Windows.Forms.ComboBox();
             this.tbxUnitPrice = new System.Windows.Forms.TextBox();
             this.tbxStock = new System.Windows.Forms.TextBox();
-            this.tbxQuantityPerUnit = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.tbxUpdateStock = new System.Windows.Forms.TextBox();
+            this.tbxUpdateUnitPrice = new System.Windows.Forms.TextBox();
+            this.cbxUpdateCategoyId = new System.Windows.Forms.ComboBox();
+            this.tbxUpdateProductName = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProduct)).BeginInit();
             this.gbxCategory.SuspendLayout();
             this.gbxProductName.SuspendLayout();
             this.gbxProductAdd.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgwProduct
@@ -60,6 +69,7 @@
             this.dgwProduct.Name = "dgwProduct";
             this.dgwProduct.Size = new System.Drawing.Size(642, 123);
             this.dgwProduct.TabIndex = 0;
+            this.dgwProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgwProduct_CellClick);
             this.dgwProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // gbxCategory
@@ -122,12 +132,10 @@
             // gbxProductAdd
             // 
             this.gbxProductAdd.Controls.Add(this.btnAdd);
-            this.gbxProductAdd.Controls.Add(this.tbxQuantityPerUnit);
             this.gbxProductAdd.Controls.Add(this.tbxStock);
             this.gbxProductAdd.Controls.Add(this.tbxUnitPrice);
             this.gbxProductAdd.Controls.Add(this.cbxCategoryId);
             this.gbxProductAdd.Controls.Add(this.tbxProductName2);
-            this.gbxProductAdd.Controls.Add(this.label5);
             this.gbxProductAdd.Controls.Add(this.label4);
             this.gbxProductAdd.Controls.Add(this.label3);
             this.gbxProductAdd.Controls.Add(this.label2);
@@ -175,16 +183,6 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Stok Adedi";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 125);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Birim Adedi";
-            this.label5.Click += new System.EventHandler(this.Label5_Click);
-            // 
             // tbxProductName2
             // 
             this.tbxProductName2.Location = new System.Drawing.Point(108, 24);
@@ -214,13 +212,6 @@
             this.tbxStock.Size = new System.Drawing.Size(169, 20);
             this.tbxStock.TabIndex = 8;
             // 
-            // tbxQuantityPerUnit
-            // 
-            this.tbxQuantityPerUnit.Location = new System.Drawing.Point(108, 122);
-            this.tbxQuantityPerUnit.Name = "tbxQuantityPerUnit";
-            this.tbxQuantityPerUnit.Size = new System.Drawing.Size(169, 20);
-            this.tbxQuantityPerUnit.TabIndex = 4;
-            // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(48, 148);
@@ -231,11 +222,105 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnUpdate);
+            this.groupBox1.Controls.Add(this.tbxUpdateStock);
+            this.groupBox1.Controls.Add(this.tbxUpdateUnitPrice);
+            this.groupBox1.Controls.Add(this.cbxUpdateCategoyId);
+            this.groupBox1.Controls.Add(this.tbxUpdateProductName);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Location = new System.Drawing.Point(351, 283);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(283, 186);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Ürün Güncelle";
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(48, 148);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(123, 23);
+            this.btnUpdate.TabIndex = 9;
+            this.btnUpdate.Text = "Güncelle";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
+            // 
+            // tbxUpdateStock
+            // 
+            this.tbxUpdateStock.Location = new System.Drawing.Point(108, 99);
+            this.tbxUpdateStock.Name = "tbxUpdateStock";
+            this.tbxUpdateStock.Size = new System.Drawing.Size(169, 20);
+            this.tbxUpdateStock.TabIndex = 8;
+            // 
+            // tbxUpdateUnitPrice
+            // 
+            this.tbxUpdateUnitPrice.Location = new System.Drawing.Point(108, 77);
+            this.tbxUpdateUnitPrice.Name = "tbxUpdateUnitPrice";
+            this.tbxUpdateUnitPrice.Size = new System.Drawing.Size(169, 20);
+            this.tbxUpdateUnitPrice.TabIndex = 7;
+            // 
+            // cbxUpdateCategoyId
+            // 
+            this.cbxUpdateCategoyId.FormattingEnabled = true;
+            this.cbxUpdateCategoyId.Location = new System.Drawing.Point(108, 50);
+            this.cbxUpdateCategoyId.Name = "cbxUpdateCategoyId";
+            this.cbxUpdateCategoyId.Size = new System.Drawing.Size(169, 21);
+            this.cbxUpdateCategoyId.TabIndex = 6;
+            // 
+            // tbxUpdateProductName
+            // 
+            this.tbxUpdateProductName.Location = new System.Drawing.Point(108, 24);
+            this.tbxUpdateProductName.Name = "tbxUpdateProductName";
+            this.tbxUpdateProductName.Size = new System.Drawing.Size(169, 20);
+            this.tbxUpdateProductName.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 102);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 13);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Stok Adedi";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 80);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 13);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Ürün Fiyat";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 56);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 13);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Ürün Kategorisi";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 31);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(48, 13);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Ürün Adı";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 481);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbxProductAdd);
             this.Controls.Add(this.gbxProductName);
             this.Controls.Add(this.gbxCategory);
@@ -250,6 +335,8 @@
             this.gbxProductName.PerformLayout();
             this.gbxProductAdd.ResumeLayout(false);
             this.gbxProductAdd.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -264,17 +351,25 @@
         private System.Windows.Forms.TextBox tbxProductName;
         private System.Windows.Forms.Label lblProductName;
         private System.Windows.Forms.GroupBox gbxProductAdd;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.TextBox tbxQuantityPerUnit;
         private System.Windows.Forms.TextBox tbxStock;
         private System.Windows.Forms.TextBox tbxUnitPrice;
         private System.Windows.Forms.ComboBox cbxCategoryId;
         private System.Windows.Forms.TextBox tbxProductName2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.TextBox tbxUpdateStock;
+        private System.Windows.Forms.TextBox tbxUpdateUnitPrice;
+        private System.Windows.Forms.ComboBox cbxUpdateCategoyId;
+        private System.Windows.Forms.TextBox tbxUpdateProductName;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
 

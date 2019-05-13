@@ -39,5 +39,10 @@ namespace Northwind.Bussiness.Concrete
         {
             return _productDal.GetAll(p => p.ProductName.ToLower().Contains(productName.ToLower())); // parametre olarak yollanan 'key' değeri içersin(contains)
         }
+
+        public void Update(Product product)
+        {
+            _productDal.Update(product);
+        }
     }
 }
