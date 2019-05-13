@@ -1,0 +1,14 @@
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\Northwind.Bussiness.dll
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\Northwind.Bussiness.pdb
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\Northwind.DataAccess.dll
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\Northwind.Entities.dll
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\EntityFramework.dll
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\Northwind.DataAccess.pdb
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\Northwind.DataAccess.dll.config
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\Northwind.Entities.pdb
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\EntityFramework.xml
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\obj\Debug\Northwind.Bussiness.csprojAssemblyReference.cache
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\obj\Debug\Northwind.Bussiness.csproj.CoreCompileInputs.cache
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\obj\Debug\Northwind.Bussiness.csproj.CopyComplete
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\obj\Debug\Northwind.Bussiness.dll
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\obj\Debug\Northwind.Bussiness.pdb

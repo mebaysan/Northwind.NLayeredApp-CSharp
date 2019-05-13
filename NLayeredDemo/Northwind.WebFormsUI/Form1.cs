@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Northwind.Bussiness.Concrete;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,17 @@ namespace Northwind.WebFormsUI
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ProductManager productManager = new ProductManager();
+            dgwProduct.DataSource = productManager.GetAll();
         }
     }
 }
