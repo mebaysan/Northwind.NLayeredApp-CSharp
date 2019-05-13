@@ -7,12 +7,8 @@ using System.Threading.Tasks;
 
 namespace Northwind.DataAccess.Abstract
 {
-    public interface IProductDal
+    public interface IProductDal:IEntityRepository<Product>
     {
-        List<Product> GetAll();
-        Product Get(int id);
-        void Add(Product product);
-        void Update(Product product);
-        void Delete(Product product);
+        
     }
 }

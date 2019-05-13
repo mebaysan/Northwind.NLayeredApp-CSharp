@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IEntityRepository.cs" />
     <Compile Include="Abstract\IProductDal.cs" />
     <Compile Include="Concrete\EntityFramework\NorthwindContext.cs" />
     <Compile Include="Concrete\EntityFramework\EfProductDal.cs" />
