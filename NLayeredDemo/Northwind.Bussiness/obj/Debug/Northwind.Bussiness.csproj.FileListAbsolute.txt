@@ -12,3 +12,6 @@ C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.
 C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\obj\Debug\Northwind.Bussiness.csproj.CopyComplete
 C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\obj\Debug\Northwind.Bussiness.dll
 C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\obj\Debug\Northwind.Bussiness.pdb
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\Northwind.Bussiness.dll.config
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.Bussiness\bin\Debug\EntityFramework.SqlServer.xml

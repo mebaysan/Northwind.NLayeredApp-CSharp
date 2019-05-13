@@ -5,6 +5,7 @@ using Northwind.DataAccess.Concrete.EntityFramework;
 using Northwind.Entities.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,19 @@ namespace Northwind.Bussiness.Concrete
         public void Add(Product product)
         {
             _productDal.Add(product);
+        }
+
+        public void Delete(Product product)
+        {
+            try
+            {
+                _productDal.Delete(product);
+
+            }
+            catch
+            {
+                throw new Exception("Güncelleme Gerçekleşemedi!");   
+            }
         }
 
         public List<Product> GetAll()

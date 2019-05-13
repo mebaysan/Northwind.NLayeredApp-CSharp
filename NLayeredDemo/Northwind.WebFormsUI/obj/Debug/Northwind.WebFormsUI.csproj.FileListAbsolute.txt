@@ -20,3 +20,4 @@ C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.
 C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.WebFormsUI\obj\Debug\Northwind.WebFormsUI.csproj.CopyComplete
 C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.WebFormsUI\obj\Debug\Northwind.WebFormsUI.exe
 C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.WebFormsUI\obj\Debug\Northwind.WebFormsUI.pdb
+C:\Users\Yusuf\source\repos\Northwind.NLayeredApp-CSharp\NLayeredDemo\Northwind.WebFormsUI\bin\Debug\Northwind.Bussiness.dll.config

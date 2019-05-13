@@ -55,6 +55,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnRemove = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProduct)).BeginInit();
             this.gbxCategory.SuspendLayout();
             this.gbxProductName.SuspendLayout();
@@ -315,11 +316,22 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Ürün Adı";
             // 
+            // btnRemove
+            // 
+            this.btnRemove.Location = new System.Drawing.Point(658, 361);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(101, 23);
+            this.btnRemove.TabIndex = 5;
+            this.btnRemove.Text = "Seçili Ürünü Sil";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.BtnRemove_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 481);
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbxProductAdd);
             this.Controls.Add(this.gbxProductName);
@@ -370,6 +382,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnRemove;
     }
 }
 
