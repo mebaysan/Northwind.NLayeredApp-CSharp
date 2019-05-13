@@ -19,9 +19,25 @@ namespace Northwind.Bussiness.Concrete
         {
             _productDal = productDal;
         }
+
+        public void Add(Product product)
+        {
+            _productDal.Add(product);
+        }
+
         public List<Product> GetAll()
         {
             return _productDal.GetAll();
+        }
+
+        public List<Product> GetProductByCategory(int categoryId)
+        {
+            return _productDal.GetAll(p => p.CategoryId == categoryId);
+        }
+
+        public List<Product> GetProductByProductName(string productName)
+        {
+            return _productDal.GetAll(p => p.ProductName.ToLower().Contains(productName.ToLower())); // parametre olarak yollanan 'key' değeri içersin(contains)
         }
     }
 }

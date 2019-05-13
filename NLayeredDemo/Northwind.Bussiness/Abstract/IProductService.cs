@@ -10,5 +10,8 @@ namespace Northwind.Bussiness.Abstract
    public interface IProductService
     {
         List<Product> GetAll();
+        List<Product> GetProductByCategory(int categoryId);
+        List<Product> GetProductByProductName(string productName);
+        void Add(Product product);
     }
 }
