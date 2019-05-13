@@ -8,9 +8,11 @@ using System.Threading.Tasks;
 
 namespace Northwind.DataAccess.Concrete.EntityFramework
 {
-   public class NorthwindContext:DbContext
+    public class NorthwindContext : DbContext
     {
         // veritabanına karşılık gelen context'i hazırladık
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+
     }
 }
